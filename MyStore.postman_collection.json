@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "e7407d83-c6dd-4335-ac6b-cf2a1cc10086",
+		"name": "MyStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32660031"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Save Users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"alex\",\r\n    \"email\": \"tests4@mail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Users",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ronaldo santos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "05daa133-0786-4d6c-bef8-d4373ab0f077"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Users",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ronaldo\",\r\n    \"email\": \"tests5@mail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4b0d615f-1822-4e2b-bc46-1f5e9aa228e9"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Save Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"f0f60c06-d5b5-4737-a110-cc39f125bbf3\",\r\n    \"name\": \"Figura de ação Marvel Homem Aranha Olympus Homem Aranha E6358 de Hasbro Classic\",\r\n    \"value\": 70.0,\r\n    \"availableQuantity\": 10,\r\n    \"description\": \"Produto novo, bem acabado, alegria para colecionadores\",\r\n    \"characteristics\": [{\r\n        \"name\": \"Fabricante\",\r\n        \"description\": \"Iron Studios\"\r\n    },{\r\n        \"name\": \"material\",\r\n        \"description\": \"Plástico\"\r\n    }],\r\n    \"images\": [{\r\n        \"url\": \"https://i.imgur.com/dwDZICq.jpg\",\r\n        \"description\": \"Imagem do Homem Aranha\"\r\n    }],\r\n    \"category\": \"Colecionáveis\",\r\n    \"creationDate\": \"2022-10-12T14:22:53.496Z\",\r\n    \"updateDate\": \"2022-10-12T14:22:53.496Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Products",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"762b507d-2a92-4874-bc7a-d6a4c468ecd1\",\r\n    \"name\": \"Figura de ação Marvel Homem Aranha Olympus Homem Aranha E6358 de Hasbro Classic\",\r\n    \"value\": 70.0,\r\n    \"availableQuantity\": 10,\r\n    \"description\": \"Produto novo, bem acabado, alegria para colecionadores\",\r\n    \"characteristics\": [{\r\n        \"name\": \"Fabricante\",\r\n        \"description\": \"Iron Studios\"\r\n    },{\r\n        \"name\": \"material\",\r\n        \"description\": \"Plástico\"\r\n    }],\r\n    \"images\": [{\r\n        \"url\": \"https://i.imgur.com/dwDZICq.jpg\",\r\n        \"description\": \"Imagem do Homem Aranha\"\r\n    }],\r\n    \"category\": \"Colecionáveis\",\r\n    \"creationDate\": \"2022-10-12T14:22:53.496Z\",\r\n    \"updateDate\": \"2022-10-12T14:22:53.496Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "0440e01d-80db-4236-bcd8-7d11c5beef65"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Products",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "0440e01d-80db-4236-bcd8-7d11c5beef65"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
